@@ -1,0 +1,589 @@
+/*登录注册页面开始*/
+.shopping{
+	width: 100%;
+	/*height: 1000px;*/
+	background-color: #eee;
+}
+.shopping_top{
+	border:1px solid red;
+	width: 100%;
+	height: 80px;
+}
+.shopping_content{
+	border:1px solid yellow;
+	width: 100%;
+	height: 500px;
+}
+.shopping_foot{
+	border:1px solid pink;
+	width: 100%;
+	height: 200px;
+}
+.loginAndregister{
+	border:1px solid pink;
+	width: 380px;
+	height: 410px;
+	margin-top:50px;
+	margin-left: 700px;
+	border-radius: 10px;
+	box-shadow: 5px 5px red;
+	overflow: hidden;
+}
+.loginAndregister_top{
+	/*border:1px solid pink;*/
+	width: 100%;
+	height: 70px;
+}
+.loginAndregister_top ul li{
+	float: left;
+	width: 50%;
+	text-align: center;
+	line-height: 70px;
+}
+.loginAndregister_content{
+	width: 100%;
+	height: 340px;
+	position: relative;
+}
+.login{
+	/*border:1px solid pink;*/
+	width: 100%;
+	height: 340px;
+	position: absolute;
+}
+.register{
+	/*border:1px solid pink;*/
+	width: 100%;
+	height: 340px;
+	position: absolute;
+}
+.on{
+	background-color:red;
+	border-bottom: 2px solid red;
+}
+.state{
+	color:red;
+}
+.input_group{
+	border:1px solid #ccc;
+	width: 300px;
+	height: 36px;
+	border-radius:5px;
+	overflow: hidden;
+	margin:auto;
+	margin-top:5px;
+}
+input{
+	border: 0px;
+	border-left: 1px solid #ccc;
+	width: 87%;
+	height: 40px;
+	float: right;
+}
+
+p{
+	margin-top:20px;
+	margin-left:40px;
+}
+.submit_margin_top{
+	margin-top:30px;
+}
+/*登录注册页面结束*/
+
+/*商城首页页面开始*/
+
+/*头部开始*/
+.index{
+	width: 100%;
+}
+.index_top{
+	width: 100%;
+	height: 115px;
+	border-bottom: 1px solid #c8baaa;
+}
+.index_top_head{
+	width: 100%;
+	height: 26px;
+	border-bottom: 1px solid #c8baaa;
+}
+.index_top_head_left>ul{
+	margin-left: 60px;
+}
+.index_top_head_left>ul>li{
+	margin-left: 15px;
+	float: left;
+	line-height: 26px;
+}
+.index_top_head_right>ul{
+	margin-left: 750px;
+}
+
+.index_top_head_right>ul>li{
+	margin-left: 15px;
+	float: left;
+	padding-left: 15px;
+	position: relative;
+	line-height: 26px;
+}
+.index_top_head_right>ul>li::before{
+	content: "";
+	width: 2px;
+	height: 14px;
+	position: absolute;
+	background-color: #ccc;
+	left:-2px;
+	top:5px;
+}
+li>a:hover{
+	color:red;
+}
+
+.index_top_foot{
+	width: 100%;
+	height: 89px;
+}
+.index_top_foot_left{
+	margin-left: 70px;
+	width: 50%;
+	height: 89px;
+}
+.index_top_foot_left>ul>li{
+	width: 25%;
+	float: left;
+	position: relative;
+	line-height: 50px;
+}
+.index_top_foot_left>ul>li::after{
+	content: "";
+	width: 1px;
+	height: 50px;
+	/*border-left: dotted; */
+	position: absolute;
+	background-color: #ccc;
+	left:-8px;
+	top:15px;
+}
+li span{
+	margin: 6px;
+	color: #999;
+}
+.index_top_foot_right{
+	width: 40%;
+	height: 89px;
+	/*border:1px solid pink;*/
+}
+.search{
+	width: 520px;
+	height: 40px;
+	margin-top:14px;
+	border:1px solid red;
+	background-color:red;
+}
+.search_text{
+	margin-top: 2px;
+	margin-left: 2px; 
+	width: 400px;
+	height: 34px;
+}
+.search_sub{
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 50px;
+	height: 30px;
+	background-color: 
+	red;color: #fff;			
+	font-size: 18px; 
+	font-weight: 500;
+	border: 0px;}
+/*头部结束*/
+
+
+/*轮播图开始*/
+.jd_banner{
+	width:80%;
+	height: 400px;
+	margin: auto;
+	overflow: hidden;
+	/*position: absolute;如果使用absolute定位，会造成父容器无法获取由子元素撑开的高度*/
+	position: relative;
+}
+.jd_bannerImg{
+	width: 500%;	
+	height: 200px;
+	position: relative;
+	/*使用定位：使用百分比的时候是参照父容器的宽度*/
+	/*left:-100%;*/
+}
+.jd_bannerImg>li{
+	width: 20%;
+	float: left;
+}
+.jd_bannerImg>li img{
+	/*去除文本基线的方法
+	1.设置为块元素
+	2.可以将文本的字体大小设置为0
+	3.vertical-align: bottom;*/
+	width: 100%;
+	display: block;
+}
+.jd_bannerIndicator{
+	width: 100%;
+	height:10px;
+	position: absolute;
+	left: 50%;
+	bottom: 5px;
+	transform: translateX(-50%);
+}
+
+.jd_bannerIndicator>li{
+	width: 6px;
+	height: 6px;
+	border-radius: 5px;
+	float:left;
+	border: 1px solid #fff;
+	margin-left: 10px;
+
+}
+.jd_bannerIndicator>li.active{
+	background-color: white;
+}
+/*轮播图结束*/
+
+/*主页商品展示开始*/
+.index_content{
+	width: 80%;
+	margin: auto;
+	height:500px;
+	border:1px  dotted pink; 
+}
+.index_content_item{
+	width: 250px;
+	height:350px;	
+	box-shadow:2px 2px 2px yellow;
+	margin:5px;
+	/*border:1px  dotted red; */
+	position: relative;
+}
+
+.index_content_item_img{
+	width: 250px;
+	height:350px;
+	position: absolute;
+}
+.index_content_item_img img{
+	width: 100%;
+	height:100%;
+}
+.index_content_item_text{
+	width: 100%;
+	height:100px;
+	position: absolute;
+	border:1px  solid red; 
+	top:250px;
+}
+.collectionAndpay{
+	width: 100%;
+	height:30px;
+	position: absolute;
+	/*background-color: red;*/
+}
+.collection{
+	width: 70px;
+	height:30px;
+	background-color: pink;
+	border-top-right-radius:50px;
+	border-bottom-right-radius:50px;
+}
+.pay{
+	width: 70px;
+	height:30px;
+	background-color: pink;
+	border-top-left-radius:50px;
+	border-bottom-left-radius:50px;
+}
+.collection:hover{
+	background-color: red;
+}
+.pay:hover{
+	background-color: red;
+}
+.collection,.pay a{
+	display: block;
+	text-align: center;
+	line-height: 30px;
+}
+.description{
+	width: 100%;
+	height:70px;
+	background-color: pink;
+	margin-top:30px;
+}
+/*主页商品展示结束*/
+/*商城首页页面结束
+
+/*商品详情页开始*/
+.productDetail{
+	width: 75%;
+	/*height:570px;*/
+	margin: auto;
+	border: 1px solid pink;
+}
+.productDetail_left{
+	width: 420px;
+	height:420px;
+	border: 1px solid pink;
+	margin-top:20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.productDetail_left img{
+	width: 100%;
+	height:100%;
+}
+.productDetail_left:hover{
+ 	transform: scale(1.1);  
+}
+.productDetail_right{
+	width: 480px;
+	height:420px;
+	border: 1px solid pink;
+	margin-top:20px;
+	margin-left: 40px;
+}
+.product_title{
+	width: 90%;
+	height:50px;
+	border: 1px solid pink;
+	margin:auto;
+	line-height: 50px;
+	font-weight: 800px;
+	font-size: 18px;
+}
+.product_color{
+	width: 100%;
+	border: 1px solid pink;
+	margin:auto;
+	margin-top:10px;
+	line-height: 40px;
+}
+.product_color ul li{
+	width: 40px;
+	height:40px;
+	border: 1px solid pink;
+	float: left;
+	/*margin-left:10px;*/
+}
+.product_number{
+	width: 100%;
+	height:40px;
+	border: 1px solid pink;
+	margin-top:10px;
+	line-height: 40px;
+}
+.product_number ul {
+	margin-left: 62px;
+}
+.product_number ul li{
+	float: left;
+	width: 40px;
+	height:30px;
+	border: 1px solid #e6e6e6;
+	line-height: 30px;
+	text-align: center;
+	margin-top:5px;
+}
+.product_number ul li:hover{
+	cursor:pointer;
+}
+.input_number{
+	width: 40px ;
+	height:29px;
+	text-align: center;
+	border-bottom:  1px solid #e6e6e6;
+}
+.product_buy{
+	width: 100%;
+	margin-top:10px;
+	border: 1px solid #e6e6e6;
+	text-align: center;
+}
+.button{
+	width: 178px ;
+	height:39px;
+	line-height:39px;
+	font-size:16px;
+}
+.paynow{
+	border: 1px solid red;
+	background-color:#ffeded;
+	color:red;
+	margin-left: 40px;
+}
+.join_shoppingcar{
+	border: 1px solid red;
+	background-color:#ff0036;
+	color:#fff;
+	margin-left: 30px;
+}
+.discount{
+	width: 100%;
+	height: 200px;
+	border: 1px solid pink;
+	margin:auto;
+	margin-top:10px;
+	line-height: 40px;
+}
+.discount p{
+	font-size:16px;
+}
+/*商品详情页结束*/
+
+/*购物车页面开始*/
+.shoppingCar{
+	width: 75%;
+	border: 1px solid red;
+	margin: auto;
+}
+.shoppingCar_header ul{
+	width: 100%;
+	border-bottom:  3px solid #e6e6e6;
+}
+.shoppingCar_header ul li{
+	height: 45px;
+	font-size: 16px;
+	float:left;
+	margin-left: 30px;
+	line-height: 45px;
+}
+.shoppingCar_header ul li span{
+	margin: 0;
+}
+.shoppingCar_content ul li{
+	float: left;
+}
+.shoppingCar_content_item{
+	width: 100%;
+	height:50px;
+}
+.shoppingCar_content_top ul li{
+	width: 15%;
+	height:50px;
+	line-height: 50px;
+}
+.shoppingCar_content_top ul li input{
+	width: 20px;
+	height:20px;
+	margin-top:15px;
+}
+.shoppingCar_content_top ul li span{
+	margin: 0px;
+}
+.shoppingCar_content_item{
+	width: 100%;
+}
+.shoppingCar_content_item ul {
+	background-color:yellow;
+}
+.shoppingCar_content_item ul li{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 15%;
+}
+.shoppingCar_content_item ul li a{
+	display:block;
+}
+.shoppingCar_content_item ul li img{
+	width: 80px;
+	height:80px;
+}
+.item_title{
+	width: 130px;
+	overflow: hidden;
+	border:  1px solid yellow;
+}
+.item_color{
+	width: 100px;
+	margin-left: 30px;
+	overflow: hidden;
+	border:  1px solid yellow;
+}
+.number_change{
+	/*background-color:red;*/
+}
+.number_change ul{
+	width: 85%;
+}
+.number_change ul li{
+	text-align: center;
+	width: 33%;
+	padding-top: 0px;
+}
+.number_change ul li .input_number{
+	width: 100%;
+}
+.shoppingCar_foot{
+	width: 75%;
+	height: 50px;
+	background-color:#ccc;
+	position: fixed;
+	bottom: 1px;
+	margin-left: 12.5%;
+}
+.shoppingCar_foot ul li{
+	float: left;
+	width: 14%;
+	line-height: 50px;
+}
+.shoppingCar_foot .checkboxAll{
+	width:20px;
+	height: 20px;
+	margin-top:15px;
+}
+.shoppingCar_foot ul li span{
+	margin:0px;
+}
+.jiesuan{
+	width:50px;
+	height: 35px;
+	background-color:red;
+	margin-top:7px;
+	border-radius: 5px;
+}
+.f_r .fr{
+	margin-right:50px;
+	float: right;
+}
+.red{
+	border-bottom: red;
+	color: red;
+}
+/*购物车页面结束*/
+
+/*商品结算页面开始*/
+.accounts{
+	border: 1px solid pink;
+	width:75%;
+	margin: auto;
+}
+.address{
+	width:300px;
+	border:1px solid #ccc;
+}
+.finallAccount{
+	width:500px;
+	border:1px solid red;
+}
+.finallAccount p{
+	text-align: right;
+}
+/*商品结算页面结束*/
+
+
+/*订单页面开始*/
+.order{
+	width:75%;
+	margin: auto;
+	border:1px solid red;
+}
+
+/*订单页面结束*/
